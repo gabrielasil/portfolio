@@ -14,14 +14,14 @@ export const SplitScreen = (props: SplitScreenProps) => {
         display: "grid",
         width: "100%",
         gridTemplateColumns,
-        bgcolor: "#B48EAD",
+        bgcolor: "#2a2b55",
         height: "100%",
       }}
     >
       <Box
         height="100%"
         overflow="auto"
-        boxShadow={"0 0 0 8px rgba(208,135,112, 0.16)"}
+        boxShadow="2px 0px 8px 8px rgba(123,108,103, 0.16)"
       >
         {leftElement}
       </Box>

@@ -2,6 +2,7 @@ import {
   Avatar,
   Box,
   Icon,
+  SvgIcon,
   ThemeProvider,
   Typography,
   createTheme,
@@ -9,7 +10,7 @@ import {
 import "./App.css";
 import {SplitScreen} from "./components/SplitScreen";
 import {pixelCat} from "./assets/images/images";
-import {GitHub, LinkedIn} from "@mui/icons-material";
+import {Gamepad, GitHub, LinkedIn} from "@mui/icons-material";
 
 const theme = createTheme({
   typography: {
@@ -38,7 +39,7 @@ function App() {
           leftElement={
             <Box
               sx={{
-                backgroundColor: "#A3BE8C",
+                backgroundColor: "#67669d",
                 height: "100%",
                 boxSizing: "border-box",
                 display: "flex",
@@ -79,6 +80,52 @@ function App() {
                   to learn more.
                 </Typography>
               </Box>
+              <Box sx={{display: "flex", gap: "10px", flexDirection: "column"}}>
+                <Typography>Likes</Typography>
+                <Box sx={{display: "flex", gap: "10px"}}>
+                  {["RPG", "gaming", "rock music", "cooking"].map((hobby) => {
+                    return (
+                      <Box
+                        sx={{
+                          display: "flex",
+                          flexDirection: "row",
+                          backgroundColor: "#e7c7ba",
+                          p: "3px",
+                          gap: "2px",
+                          borderRadius: "5px",
+                          boxShadow: "0 0 0 4px rgba(208,135,112, 0.16)",
+                        }}
+                      >
+                        <Gamepad />
+                        <Typography>{hobby}</Typography>
+                      </Box>
+                    );
+                  })}
+                </Box>
+              </Box>
+              <Box sx={{display: "flex", gap: "10px", flexDirection: "column"}}>
+                <Typography>Knows</Typography>
+                <Box sx={{display: "flex", gap: "10px"}}>
+                  {["React.js", "NodeJS", "PostgreSQL", "AWS"].map((hobby) => {
+                    return (
+                      <Box
+                        sx={{
+                          display: "flex",
+                          flexDirection: "row",
+                          backgroundColor: "#e7c7ba",
+                          p: "3px",
+                          gap: "2px",
+                          borderRadius: "5px",
+                          boxShadow: "0 0 0 4px rgba(208,135,112, 0.16)",
+                        }}
+                      >
+                        <Gamepad />
+                        <Typography>{hobby}</Typography>
+                      </Box>
+                    );
+                  })}
+                </Box>
+              </Box>
               <Box
                 sx={{
                   display: "flex",
@@ -87,7 +134,7 @@ function App() {
                 }}
               >
                 <GitHub
-                  onClick={() => openInNewTab("github.com/gabrielasil")}
+                  onClick={() => openInNewTab("//github.com/gabrielasil")}
                   cursor="pointer"
                   sx={{
                     width: "30px",
@@ -97,7 +144,7 @@ function App() {
                 <LinkedIn
                   onClick={() =>
                     openInNewTab(
-                      "linkedin.com/in/gabriela-melo-silva-338950159"
+                      "//linkedin.com/in/gabriela-melo-silva-338950159"
                     )
                   }
                   cursor="pointer"
