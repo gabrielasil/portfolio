@@ -18,7 +18,11 @@ export const SplitScreen = (props: SplitScreenProps) => {
         height: "100%",
       }}
     >
-      <Box height="100%" overflow="auto">
+      <Box
+        height="100%"
+        overflow="auto"
+        boxShadow={"0 0 0 8px rgba(208,135,112, 0.16)"}
+      >
         {leftElement}
       </Box>
       <Box height="100%" overflow="auto">
