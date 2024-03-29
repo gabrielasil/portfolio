@@ -14,7 +14,7 @@ export const SplitScreen = (props: SplitScreenProps) => {
         display: "grid",
         width: "100%",
         gridTemplateColumns,
-        bgcolor: "#2a2b55",
+        bgcolor: "#2E3440",
         height: "100%",
       }}
     >

@@ -39,7 +39,7 @@ function App() {
           leftElement={
             <Box
               sx={{
-                backgroundColor: "#67669d",
+                backgroundColor: "#4C566A",
                 height: "100%",
                 boxSizing: "border-box",
                 display: "flex",
@@ -61,6 +61,7 @@ function App() {
                   textAlign={"center"}
                   fontWeight={800}
                   fontSize="24px"
+                  color={"#ECEFF4"}
                 >
                   Hello! I'm Rhysand
                 </Typography>
@@ -69,7 +70,11 @@ function App() {
                   src={pixelCat}
                   sx={{width: 200, height: 200}}
                 />
-                <Typography textAlign="justify" fontWeight={600}>
+                <Typography
+                  textAlign="justify"
+                  fontWeight={600}
+                  color={"#ECEFF4"}
+                >
                   Since I played my first video game at childhood, it has become
                   my greatest passion. When growing up, I also got interested on
                   coding and web development, and choose that as a career. I’m
@@ -89,15 +94,15 @@ function App() {
                         sx={{
                           display: "flex",
                           flexDirection: "row",
-                          backgroundColor: "#e7c7ba",
+                          backgroundColor: "#2E3440",
                           p: "3px",
                           gap: "2px",
                           borderRadius: "5px",
-                          boxShadow: "0 0 0 4px rgba(208,135,112, 0.16)",
+                          boxShadow: "3px 2px 0 1px rgb(15 13 45 / 16%)",
                         }}
                       >
                         <Gamepad />
-                        <Typography>{hobby}</Typography>
+                        <Typography color={"#ECEFF4"}>{hobby}</Typography>
                       </Box>
                     );
                   })}
@@ -112,15 +117,15 @@ function App() {
                         sx={{
                           display: "flex",
                           flexDirection: "row",
-                          backgroundColor: "#e7c7ba",
+                          backgroundColor: "#2E3440",
                           p: "3px",
                           gap: "2px",
                           borderRadius: "5px",
-                          boxShadow: "0 0 0 4px rgba(208,135,112, 0.16)",
+                          boxShadow: "3px 2px 0 1px rgb(15 13 45 / 16%)",
                         }}
                       >
                         <Gamepad />
-                        <Typography>{hobby}</Typography>
+                        <Typography color={"#ECEFF4"}>{hobby}</Typography>
                       </Box>
                     );
                   })}
